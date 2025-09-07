@@ -1,0 +1,240 @@
+/* estilos.css - Modo oscuro base para Videojuegos */
+
+body {
+    background-color: #181a1b;
+    color: #f1f1f1;
+}
+
+.navbar {
+    background-color: #23272b !important;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.7);
+}
+.footer, footer {
+    background-color: #111315 !important;
+}
+
+/* Sombra para destacar el navbar */
+.navbar {
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.7);
+}
+
+.card {
+    background-color: #23272b;
+    color: #f1f1f1;
+    border: 1px solid #222;
+}
+
+.card-title, .card-text {
+    color: #f1f1f1;
+}
+
+.btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+    background-color: #343a40;
+    border-color: #23272b;
+    color: #f1f1f1;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #495057;
+    border-color: #23272b;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #23272b;
+    border-color: #343a40;
+    color: #f1f1f1;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #444;
+    border: 1px solid #fff;
+}
+.carousel-indicators .active {
+    background-color: #f1f1f1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+footer {
+    background-color: #111315 !important;
+    color: #aaa;
+}
+
+
+/* =============================
+   INTEGRACIÓN DE styles.css VISUAL
+   ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+body {
+    background-color: #181818;
+    color: #e6eef6;
+    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* NAVBAR Y FOOTER: Azul principal */
+.navbar, .footer, footer {
+    background-color: #23272b !important;
+    color: #e6eef6 !important;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.7);
+}
+.navbar .nav-link, .footer a {
+    color: #4fc3f7 !important;
+    font-weight: 700;
+    transition: color 0.15s, background 0.15s;
+}
+.navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+    color: #fff !important;
+    background: rgba(79,195,247,0.08);
+}
+.footer {
+    padding: 18px 12px;
+    border-top: 1px solid #222;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* CARDS Y GRIDS: Apariencia moderna y azulada */
+.card, .news-card, .product-item {
+    background: linear-gradient(180deg, rgba(24,24,24,0.98), rgba(24,24,24,0.92));
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+    border: 1px solid #222;
+    color: #e6eef6;
+    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+.card-title, .news-card .card-title, .product-item h3 {
+    color: #4fc3f7;
+}
+.card-text, .news-card p, .product-item p {
+    color: #cfeaf6;
+}
+.card img, .news-card img, .product-item img {
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.03);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+    max-width: 100%;
+    height: auto;
+}
+
+/* BOTONES */
+
+/* BOTONES: Azul principal */
+.btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+    background-color: #4fc3f7;
+    border-color: #4fc3f7;
+    color: #181818;
+    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: background-color 0.15s, border-color 0.15s, box-shadow 0.12s;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0288d1;
+    border-color: #0288d1;
+    color: #fff;
+    box-shadow: 0 0 0 3px rgba(79,195,247,0.18);
+}
+.btn-primary:disabled {
+    background-color: #888;
+    border-color: #888;
+    color: #e6eef6;
+}
+
+/* CARRUSEL */
+.carousel-item img {
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+
+/* GRID DE NOTICIAS Y PRODUCTOS */
+.news-grid, #productos ul, section ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    margin: 28px 0;
+    list-style: none;
+    padding: 0;
+}
+.news-card, .product-item, section ul li {
+    background: linear-gradient(180deg, rgba(24,24,24,0.98), rgba(24,24,24,0.92));
+    border-radius: 12px;
+    border: 1px solid #222;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+    color: #e6eef6;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* UTILIDADES Y EFECTOS */
+.shadow-navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADINGS */
+h1 {
+    color: #4fc3f7;
+    margin: 0 0 8px 0;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+h2, .content-box h2 {
+    color: #9fe7ff;
+    margin-top: 0;
+}
+
+/* MEDIA QUERIES: Responsive grid y cards */
+@media (max-width: 900px) {
+    .news-grid, #productos ul, section ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-box {
+        padding: 18px;
+        margin: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .news-grid, #productos ul, section ul {
+        grid-template-columns: 1fr;
+    }
+    .card, .news-card, .product-item {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    nav a {
+        display: inline-block;
+        margin: 6px 6px;
+    }
+    section, .content-box {
+        padding: 16px;
+        margin: 10px;
+    }
+    .product-item img {
+        max-width: 100%;
+    }
+}

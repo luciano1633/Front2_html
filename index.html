@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos - Bootstrap Demo</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados modo oscuro -->
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Videojuegos "Game On"</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Opción 'Inicio' eliminada, solo quedan Portada y Productos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Portada">Portada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Card.html" target="productos" rel="noopener">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============== CAROUSEL =============== -->
+    <section id="Portada" class="my-4">
+        <div class="container">
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Spiderman.jpg" class="d-block w-100" alt="Juego 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Spiderman2.jpg" class="d-block w-100" alt="Juego 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Uncharted.jpg" class="d-block w-100" alt="Juego 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/God_Of_War.jpg" class="d-block w-100" alt="Juego 4">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Horizon.jpg" class="d-block w-100" alt="Juego 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/The Last of us 2.jpg" class="d-block w-100" alt="Juego 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============== MAIN GRID SECTION =============== -->
+    <main class="container my-5" id="productos">
+        <h2 class="text-center mb-4">Noticias Gamer del Día</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card shadow-sm w-100 mb-4 p-2">
+                    <img src="img/Ps5.jpg" class="card-img-top img-fluid rounded mx-auto d-block mt-2"
+                        style="max-height:220px;object-fit:cover;" alt="Juego 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PlayStation 5 Slim con lector de discos baja de precio</h5>
+                        <p class="card-text small">La PS5 Slim Estándar está disponible por solo 417 euros gracias a un
+                            cupón especial en Amazon. Esta versión incluye lector de discos, resolución 4K y el mando
+                            DualSense de última generación. Una oportunidad ideal para quienes aún no han dado el salto
+                            a la nueva generación.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card shadow-sm w-100 mb-4 p-2">
+                    <img src="img/Hogwarts.jpg" class="card-img-top img-fluid rounded mx-auto d-block mt-2"
+                        style="max-height:220px;object-fit:cover;" alt="Juego 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hogwarts Legacy con 55% de descuento en PS Store</h5>
+                        <p class="card-text small"> El exitoso RPG ambientado en el universo de Harry Potter está en
+                            oferta histórica hasta el 11 de septiembre. La versión de PS4 cuesta solo 12 dólares, y la
+                            de PS5, 14 dólares. Perfecto para explorar Hogwarts, aprender hechizos y vivir una aventura
+                            mágica por un precio mínimo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card shadow-sm w-100 mb-4 p-2">
+                    <img src="img/Portal.jpg" class="card-img-top img-fluid rounded mx-auto d-block mt-2"
+                        style="max-height:220px;object-fit:cover;" alt="Juego 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"> PlayStation Portal recibe actualización que permite jugar sin tener la
+                            PS5 encendida</h5>
+                        <p class="card-text small">Sony ha lanzado una nueva actualización para el PlayStation Portal
+                            que mejora drásticamente su funcionalidad. Ahora, los usuarios con suscripción a PlayStation
+                            Plus Premium pueden acceder a juegos vía streaming en la nube, sin necesidad de tener la PS5
+                            encendida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+   <footer class="text-white text-center py-3 mt-5">
+		<small>&copy; 2025 Videojuegos. Todos los derechos reservados.</small>
+	</footer>
+
+
+    <!-- Bootstrap JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
