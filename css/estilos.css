@@ -238,3 +238,17 @@ h2, .content-box h2 {
         max-width: 100%;
     }
 }
+
+/* Resaltado de tarjetas: usar celeste del tema */
+.card-highlight {
+    border: 2px solid #4fc3f7 !important;
+    box-shadow: 0 10px 30px rgba(79,195,247,0.12);
+    transform: translateY(-6px);
+}
+
+/* Mensaje flotante usado por JS */
+.floating-msg {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
