@@ -8,116 +8,110 @@
 	<!-- Bootstrap 5 CDN -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Estilos personalizados modo oscuro -->
-	<link href="css/estilos.css" rel="stylesheet">
+	<link href="assets/css/estilos.css" rel="stylesheet">
 </head>
 
 <body>
 	<!-- ================= NAVBAR ================= -->
+	<!--
+		Card.html - Catálogo y carrito de Videojuegos Game On
+		Estructura: Navbar, Main (búsqueda, productos, carrito), Modales, Footer, Scripts
+	-->
+	<!-- ================= NAVBAR ================= -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Videojuegos "Game On"</a>
+			<a class="navbar-brand" href="index.html">Videojuegos "Game On"</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="Card.html">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
+	<!-- =============== MAIN: PRODUCTOS =============== -->
 	<main class="container my-5" id="productos">
-		<div class="row g-4">
-			<!-- Card 1 -->
-			<div class="col-12 col-md-6 col-lg-4">
-				<div class="card h-100">
-					<img src="img/Spiderman.jpg" class="card-img-top" alt="Portada de Spiderman" />
-					<div class="card-body">
-						<h5 class="card-title">Spiderman</h5>
-						<p class="card-text">Es una aventura de acción en mundo abierto desarrollada por Insomniac Games
-							y publicada por Sony Interactive Entertainment. En esta entrega, el jugador se pone en la
-							piel de un Peter Parker más maduro, con ocho años de experiencia como Spider-Man,
-							enfrentando una amenaza que pone en riesgo a toda la ciudad de Nueva York.</p>
-						<button type="button" class="btn btn-primary" aria-pressed="false">Agregar a la lista</button>
-					</div>
-				</div>
-			</div>
-			<!-- Card 2 -->
-			<div class="col-12 col-md-6 col-lg-4">
-				<div class="card h-100">
-					<img src="img/Spiderman2.jpg" class="card-img-top" alt="Portada de Spiderman 2" />
-					<div class="card-body">
-						<h5 class="card-title">Spiderman 2</h5>
-						<p class="card-text">es la esperada secuela de la exitosa saga de Insomniac Games, exclusiva
-							para PlayStation 5. En esta nueva entrega, los dos Spider-Man —Peter Parker y Miles Morales—
-							unen fuerzas para enfrentar una amenaza que podría destruir todo lo que aman: el simbionte
-							Venom.</p>
-						<button type="button" class="btn btn-primary" aria-pressed="false">Agregar a la lista</button>
-					</div>
-				</div>
-			</div>
-			<!-- Card 3 -->
-			<div class="col-12 col-md-6 col-lg-4">
-				<div class="card h-100">
-					<img src="img/Uncharted.jpg" class="card-img-top" alt="Portada de Uncharted" />
-					<div class="card-body">
-						<h5 class="card-title">Uncharted</h5>
-						<p class="card-text">es una aventura de acción en tercera persona desarrollada por Naughty Dog,
-							exclusiva para PlayStation 4. Esta cuarta entrega marca el cierre épico de la saga
-							protagonizada por Nathan Drake, el legendario cazador de tesoros.</p>
-						<button type="button" class="btn btn-primary" aria-pressed="false">Agregar a la lista</button>
-					</div>
-				</div>
-			</div>
-			<!-- Card 4 -->
-			<div class="col-12 col-md-6 col-lg-4">
-				<div class="card h-100">
-					<img src="img/God_Of_War.jpg" class="card-img-top" alt="Portada de God of War" />
-					<div class="card-body">
-						<h5 class="card-title">God of War</h5>
-						<p class="card-text">es un juego de acción y aventura desarrollado por Santa Monica Studio y
-							publicado por Sony Interactive Entertainment. La historia sigue a Kratos, un antiguo dios
-							griego, y su hijo Atreus, mientras emprenden un viaje a través de un mundo basado en la
-							mitología nórdica.</p>
-						<button type="button" class="btn btn-primary" aria-pressed="false">Agregar a la lista</button>
-					</div>
-				</div>
-			</div>
-			<!-- Card 5 -->
-			<div class="col-12 col-md-6 col-lg-4">
-				<div class="card h-100">
-					<img src="img/Horizon.jpg" class="card-img-top" alt="Portada de Horizon Forbidden West" />
-					<div class="card-body">
-						<h5 class="card-title">Horizon Forbidden West</h5>
-						<p class="card-text">es un juego de acción y aventura desarrollado por Guerrilla Games,
-							exclusivo para PlayStation 5. En esta secuela, los jugadores acompañan a Aloy en su viaje a
-							través de un mundo post-apocalíptico lleno de máquinas y misterios por descubrir.</p>
-						<button type="button" class="btn btn-primary" aria-pressed="false">Agregar a la lista</button>
-					</div>
-				</div>
-			</div>
-			<!-- Card 6 -->
-			<div class="col-12 col-md-6 col-lg-4">
-				<div class="card h-100">
-					<img src="img/The Last of us 2.jpg" class="card-img-top" alt="Portada de The Last of Us Part II" />
-					<div class="card-body">
-						<h5 class="card-title">The Last of Us Part II</h5>
-						<p class="card-text">es un juego de acción y aventura desarrollado por Naughty Dog y publicado
-							por Sony Interactive Entertainment. La historia sigue a Ellie, una joven que busca venganza
-							en un mundo post-apocalíptico lleno de peligros.</p>
-						<button type="button" class="btn btn-primary" aria-pressed="false">Agregar a la lista</button>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="text-center my-4">
-			<a href="index.html" class="btn btn-secondary">Inicio</a>
-		</div>
+	<!-- =============== FORMULARIO DE BÚSQUEDA =============== -->
+		<form id="form-busqueda" class="mb-4" role="search" aria-label="Buscar productos">
+			<div class="input-group">
+				<input type="text" class="form-control" id="input-busqueda" placeholder="Buscar juegos por nombre..." aria-label="Buscar juegos por nombre">
+				<button class="btn btn-primary" type="submit">Buscar</button>
+			</div>
+		</form>
+
+	<!-- =============== LISTA DE PRODUCTOS DINÁMICA =============== -->
+		<div id="productos-lista" class="row g-4" role="list" aria-label="Lista de productos"></div>
+
+	<!-- =============== ÁREA DEL CARRITO =============== -->
+		<div id="carrito-area" class="my-5" aria-live="polite"></div>
+
+		
 	</main>
-
 	<!-- =============== FOOTER =============== -->
 	<footer class="text-white text-center py-3 mt-5">
+		<div class="mb-2">
+			<a href="https://www.facebook.com/" target="_blank" class="text-decoration-none me-3" aria-label="Facebook"><i class="bi bi-facebook"></i> Facebook</a>
+			<a href="https://www.twitter.com/" target="_blank" class="text-decoration-none me-3" aria-label="Twitter"><i class="bi bi-twitter"></i> Twitter</a>
+			<a href="https://www.instagram.com/" target="_blank" class="text-decoration-none me-3" aria-label="Instagram"><i class="bi bi-instagram"></i> Instagram</a>
+		</div>
 		<small>&copy; 2025 Videojuegos. Todos los derechos reservados.</small>
 	</footer>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-	<!-- Bootstrap JS Bundle (incluye Popper) -->
+	<!-- =============== MODALES =============== -->
+	<!-- Modal Confirmación de Compra -->
+	<div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true" role="dialog" aria-modal="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content bg-dark text-white">
+				<div class="modal-header border-0">
+					<h5 class="modal-title" id="modalCompraLabel">¡Compra realizada!</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					Tu compra se ha realizado con éxito. ¡Gracias por confiar en nosotros!
+				</div>
+				<div class="modal-footer border-0">
+					<button type="button" class="btn btn-light" data-bs-dismiss="modal" id="aceptarCompraBtn">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Confirmación de Eliminación -->
+	<div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true" role="dialog" aria-modal="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content bg-dark text-white">
+				<div class="modal-header border-0">
+					<h5 class="modal-title" id="modalEliminarLabel">Eliminar producto</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body" id="modalEliminarBody">
+					¿Estás seguro de que deseas eliminar este producto del carrito?
+				</div>
+				<div class="modal-footer border-0">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelarEliminarBtn">Cancelar</button>
+					<button type="button" class="btn btn-danger" id="confirmarEliminarBtn">Eliminar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== SCRIPTS =============== -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Script de la aplicación -->
-	<script src="js/app.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 
 </html>

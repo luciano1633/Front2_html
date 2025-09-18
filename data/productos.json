@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Spiderman",
+    "imagen": "assets/img/Spiderman.jpg",
+    "precio": 59.99,
+    "descripcion": "Aventura de acción en mundo abierto desarrollada por Insomniac Games."
+  },
+  {
+    "id": 2,
+    "nombre": "Spiderman 2",
+    "imagen": "assets/img/Spiderman2.jpg",
+    "precio": 69.99,
+    "descripcion": "Secuela de la exitosa saga de Insomniac Games, exclusiva para PlayStation 5."
+  },
+  {
+    "id": 3,
+    "nombre": "Uncharted",
+    "imagen": "assets/img/Uncharted.jpg",
+    "precio": 49.99,
+    "descripcion": "Aventura de acción en tercera persona desarrollada por Naughty Dog."
+  },
+  {
+    "id": 4,
+    "nombre": "God of War",
+    "imagen": "assets/img/God_Of_War.jpg",
+    "precio": 64.99,
+    "descripcion": "Juego de acción y aventura desarrollado por Santa Monica Studio."
+  },
+  {
+    "id": 5,
+    "nombre": "Horizon Forbidden West",
+    "imagen": "assets/img/Horizon.jpg",
+    "precio": 59.99,
+    "descripcion": "Aventura de acción desarrollada por Guerrilla Games, exclusiva para PS5."
+  },
+  {
+    "id": 6,
+    "nombre": "The Last of Us Part II",
+    "imagen": "assets/img/The Last of us 2.jpg",
+    "precio": 54.99,
+    "descripcion": "Juego de acción y aventura desarrollado por Naughty Dog."
+  }
+]

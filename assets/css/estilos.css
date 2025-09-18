@@ -1,4 +1,44 @@
-/* estilos.css - Modo oscuro base para Videojuegos */
+/*
+    estilos.css - Estilos principales para Videojuegos Game On
+    Estructura: Tablas y carrito, Botones, Navbar y Footer, Cards y Grids, Utilidades, Media Queries
+*/
+/* ================== TABLAS Y CARRITO ================== */
+/* Bordes redondeados para la tabla del carrito */
+.carrito-table-rounded {
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.carrito-table-rounded thead tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+}
+.carrito-table-rounded thead tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+}
+.carrito-table-rounded tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+.carrito-table-rounded tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+/* --------- ACCESIBILIDAD Y RESPONSIVIDAD --------- */
+.btn:focus, .btn:active, .btn-primary:focus, .btn-primary:active, .btn-secondary:focus, .btn-secondary:active, .btn-danger:focus, .btn-danger:active {
+    outline: 2px solid #4fc3f7 !important;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(79,195,247,0.18) !important;
+}
+
+@media (max-width: 600px) {
+    #productos-lista.row {
+        flex-direction: column !important;
+    }
+    #productos-lista > div[class^="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
+/* ================== MODO OSCURO BASE ================== */
 
 body {
     background-color: #181a1b;
@@ -13,7 +53,7 @@ body {
     background-color: #111315 !important;
 }
 
-/* Sombra para destacar el navbar */
+/* --------- SOMBRA NAVBAR --------- */
 .navbar {
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.7);
 }
@@ -108,7 +148,7 @@ body {
     gap: 8px;
 }
 
-/* CARDS Y GRIDS: Apariencia moderna y azulada */
+/* ================== CARDS Y GRIDS ================== */
 .card, .news-card, .product-item {
     background: linear-gradient(180deg, rgba(24,24,24,0.98), rgba(24,24,24,0.92));
     border-radius: 12px;
@@ -131,9 +171,8 @@ body {
     height: auto;
 }
 
-/* BOTONES */
-
-/* BOTONES: Azul principal */
+/* ================== BOTONES ================== */
+/* --------- BOTONES: Azul principal --------- */
 .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
     background-color: #4fc3f7;
     border-color: #4fc3f7;
@@ -155,13 +194,13 @@ body {
     color: #e6eef6;
 }
 
-/* CARRUSEL */
+/* ================== CARRUSEL ================== */
 .carousel-item img {
     border-radius: 12px;
     box-shadow: 0 8px 18px rgba(0,0,0,0.6);
 }
 
-/* GRID DE NOTICIAS Y PRODUCTOS */
+/* ================== GRID DE NOTICIAS Y PRODUCTOS ================== */
 .news-grid, #productos ul, section ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -183,7 +222,7 @@ body {
     gap: 12px;
 }
 
-/* UTILIDADES Y EFECTOS */
+/* ================== UTILIDADES Y EFECTOS ================== */
 .shadow-navbar {
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
@@ -193,7 +232,7 @@ body {
     align-items: center;
 }
 
-/* HEADINGS */
+/* ================== HEADINGS ================== */
 h1 {
     color: #4fc3f7;
     margin: 0 0 8px 0;
@@ -206,7 +245,7 @@ h2, .content-box h2 {
     margin-top: 0;
 }
 
-/* MEDIA QUERIES: Responsive grid y cards */
+/* ================== MEDIA QUERIES: Responsive grid y cards ================== */
 @media (max-width: 900px) {
     .news-grid, #productos ul, section ul {
         grid-template-columns: repeat(2, 1fr);
@@ -239,14 +278,14 @@ h2, .content-box h2 {
     }
 }
 
-/* Resaltado de tarjetas: usar celeste del tema */
+/* ================== RESALTADO DE TARJETAS ================== */
 .card-highlight {
     border: 2px solid #4fc3f7 !important;
     box-shadow: 0 10px 30px rgba(79,195,247,0.12);
     transform: translateY(-6px);
 }
 
-/* Mensaje flotante usado por JS */
+/* ================== MENSAJE FLOTANTE (usado por JS) ================== */
 .floating-msg {
     font-size: 0.9rem;
     padding: 6px 10px;
