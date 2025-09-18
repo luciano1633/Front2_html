@@ -351,6 +351,10 @@ function addImageHoverEffects() {
  * Crea un pequeño formulario de contacto dinámicamente y lo añade al final del main
  */
 function addContactForm() {
+    // Solo agregar el formulario si NO estamos en Contacto.html y no existe ya un #contactForm
+    const isContacto = location.pathname.endsWith('Contacto.html');
+    if (isContacto) return;
+    if (document.getElementById('contactForm')) return;
     const main = document.querySelector('main');
     if (!main) return;
     const section = document.createElement('section');
