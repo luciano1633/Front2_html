@@ -16,7 +16,7 @@ Proyecto web estático (HTML, CSS, JS) para eCommerce de videojuegos, con diseñ
 
 - **Bootstrap 5** para maquetación responsiva y componentes.
 - **Navbar** y **footer** con enlaces a redes sociales en todas las páginas.
-- **Banner promocional** solo en la portada.
+- **Banner promocional** en la portada y card.
 - **Catálogo de productos** dinámico (carga con Fetch API desde JSON local).
 - **Formulario de búsqueda** para filtrar productos por nombre (evento submit).
 - **Carrito de compras** con resumen, total, y modales de confirmación para compra y eliminación.
